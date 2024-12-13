@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Page with Photo and Nested List</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body id="top">
+    <div class="container">
+        <img src="img/cheer pic.JPG" alt="Your Photo">
+        <h1>CHEER EXPERIENCE</h1>
+<a href="index.html">Back to Home</a>
+        <ol>
+            <li>Exceleration All Stars
+                <ul>
+                    <li>First time cheering</li>
+                    <li>4 Years total</li>
+                </ul>
+            </li>
+            <li>Orem High school
+                <ul>
+                    <li>First school cheer experience</li>
+                    <li>2 years total</li>
+                </ul>
+            </li>
+            <li>Rival Athletics Cheer
+                <ul>
+                    <li>More intense training</li>
+                    <li>3 years total</li>
+                </ul>
+            </li>
+            <li>Pleasant Grove High School
+                <ul>
+                    <li>Transferred high schools</li>
+                    <li>2 years total</li>
+                </ul>
+            </li>
+            <li>Brigham Young University
+                <ul>
+                    <li>My favorite cheer experience</li>
+                    <li>2 years and counting</li>
+                </ul>
+            </li>
+        </ol>
+        <div class="link-container">
+            <a href="https://www.instagram.com/reel/C5tz2mhvjuo/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">CHECK OUT OUR ROUTINE</a>
+        </div>
+
+        <!-- Cheerleading Joke Game -->
+        <div class="container">
+            <h2>Cheerleading Joke Game</h2>
+            <div class="button-container">
+                <button class="laugh-button" onclick="getJoke()">Click to Get a Laugh</button>
+            </div>
+            <div class="joke" id="jokeContainer"></div>
+        </div>
+
+        <!-- Back to Top Link, centered -->
+        <div class="back-to-top">
+            <a href="#top">Back to Top</a>
+        </div>
+    </div>
+
+    <script>
+        // Array of cheerleading jokes
+        const jokes = [
+            "Why did the cheerleader bring a ladder to practice? To reach the top of the pyramid!",
+            "What did the cheerleader say to the football player? 'I’ll catch you later, after I throw this ball!'",
+            "Why don’t cheerleaders ever get locked out? Because they always have the keys to success!",
+            "What’s a cheerleader’s favorite drink? A jump-up juice!",
+            "Why do cheerleaders make terrible comedians? Because their jokes always fall flat!",
+        ];
+
+        // Function to get a random joke and display it
+        function getJoke() {
+            // Get a random joke from the jokes array
+            const randomJoke = jokes[Math.floor(Math.random() * jokes.length)];
+            
+            // Display the joke in the 'jokeContainer' div
+            document.getElementById('jokeContainer').innerText = randomJoke;
+        }
+    </script>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/amgPXKrFZVg?si=jCBUyeRtVt5xjG6q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class='tableauPlaceholder' id='viz1734117673492' style='position: relative'><noscript><a href='#'><img alt='CC Scorecard ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ca&#47;CallCenterScorecardRWFD&#47;CCScorecard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CallCenterScorecardRWFD&#47;CCScorecard' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ca&#47;CallCenterScorecardRWFD&#47;CCScorecard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1734117673492');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1425px';vizElement.style.height='1037px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1425px';vizElement.style.height='1037px';} else { vizElement.style.width='100%';vizElement.style.height='10027px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #B0C4DE; /* Muted blue background */
+    color: #003366;
+}
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 8px;
+}
+h1 {
+    text-align: center;
+    color: #003366;
+    font-family: 'Times New Roman', sans-serif;
+    font-weight: bold;
+}
+ol {
+    padding-left: 20px;
+}
+ul {
+    padding-left: 20px;
+}
+.back-to-top {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.back-to-top a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #003366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.back-to-top a:hover {
+    background-color: #00509E;
+}
+
+/* Cheerleading Joke Game Styles */
+.button-container {
+    margin-top: 20px;
+}
+.laugh-button {
+    padding: 15px 30px;
+    background-color: #FF69B4; /* Pink button color */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.laugh-button:hover {
+    background-color: #FF1493; /* Darker pink when hovering */
+}
+.joke {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
